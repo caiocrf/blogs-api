@@ -14,4 +14,17 @@ const insertUser = async (body) => {
     return { type: null, message: token };
   };
 
-module.exports = { insertUser };
+  const getAll = async () => {
+    const users = await User.findAll({ attributes: { exclude: ['password'] } });
+  
+    return { type: 200, message: users };
+  };
+
+  const getById = async (id) => {
+    const user = await User.findByPk(id, { attributes: { exclude: ['password'] } });
+  
+    if (!user) return { type: 404, message: 'User does not exist' };
+  
+    return { type: 200, message: user };
+  };
+module.exports = { insertUser, getAll, getById };
