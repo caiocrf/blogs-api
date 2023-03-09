@@ -1,4 +1,4 @@
-const loginService = require('../services');
+const { loginService } = require('../services');
 const { generateToken } = require('../utils/jwtGenerate');
 
 const STATUS_OK = 200;
