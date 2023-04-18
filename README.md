@@ -1,10 +1,20 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# API de Blogs!
+
+## O que foi desenvolvido?
+
+Desenvolvi uma API e um banco de dados para a produção de conteúdo para um blog! Uma aplicação que usa Node.js usando o pacote sequelize para fazer um CRUD de posts.
+
+Habilidades que desenvolvi:
+
+- Desenvolver endpoints que estarão conectados ao seu banco de dados seguindo os princípios do REST;
+- Trabalhar a relação user e post, visto que para fazer um post é necessário usuário e login
+- Trabalhar a relação de posts para categories e de categories para posts, visto que será necessária a utilização categorias para os posts.
+
+## O que precisei saber para fazer o projeto?
+
+- Entender o conceito de Migrations
+- Entender o conceito de Model
+- Entender o conceito de Seeders
+- Entender relacionamentos 1:N
+- Entender relacionamentos N:N
+- Entender como criar uma rota com JWT
